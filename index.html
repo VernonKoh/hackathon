@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Hackathon </title>
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href = "style.css" >
+</head>
+
+<body>
+    <!-- Nav bar -->
+    <header>
+        <div class = "nav container">
+            <i class='bx bx-menu' id = "menu-icon"></i>
+            <a href ="#" class = "logo"> Upcycle<span class="symbol">&reg;</span></a>
+            <ul class = "navbar">
+                <li><a href="#home"> Home </a></li>
+                <li><a href="#about"> About Us </a></li>
+                <li><a href="#contact"> Contact Us  </a></li>
+            </ul>
+
+        </div>
+    </header>
+
+    <!-- Background image -->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1> Recycle NOW!!</h1>
+            <p> the world will reduce in 2 degrees if you start recycling now</p>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h1 class="heading"> <span> About </span> Us </h1>
+
+        <div class="row">
+            <div class="video-container">
+                <video src="images/Valorant_projects.mp4" loop autoplay muted></video>
+                <h3>Recycle Now!</h3>
+            </div>
+
+            <div class="content">
+                <div id="headerWithLottie">
+                    <div id="lottieAnimation"></div>
+                        <h3>Why should you start recycling </h3>
+                        <lottie-player src="https://assets3.lottiefiles.com/temp/lf20_9gY9Yf.json"
+                        background="transparent" speed="0.75" style="width: 50px; height: 50px;" loop autoplay>
+                        </lottie-player>
+                    </div>
+                    <p> You start to prevent global warming</p>
+                    <a href="#" class="btns">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+
+        <form onsubmit= "sendNews(); reset(); return false;">
+            <h3>Subscribe For Latest Discounts</h3>
+            <input type="email" id = "newsEmail" placeholder="Enter Your Email" class="box">
+            <input type="submit" value="Subscribe" class="btns">
+        </form>
+
+    </section>
+
+    <!--- Contact us --->
+    <section class="contact" id="contact">
+
+        <h1 class="contactheadings"> Contact Us </h1>
+
+        <div class="row">
+            <iframe class = "map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2820.5017802775665!2d103.85341123658675!3d1.2996884997029594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1936beecf457%3A0xf89eb80633e02ddc!2sReality%20Rift%20Arena%20Bugis%2B!5e0!3m2!1sen!2ssg!4v1675709139123!5m2!1sen!2ssg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <form onsubmit= "sendEmail(); reset(); return false;">
+                <h3>Message Us</h3>
+                <input type="text" id= "name" placeholder="Enter Name" class="box" required>
+                <input type="email" id = "email" placeholder="Enter Email" class="box" required>
+                <input type="text" id= "subject" placeholder="Enter Subject" class="box" required>
+                <textarea id="message" placeholder="Enter Message" class="box" cols="30" rows="10" required></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </form>
+        </div>
+    </section>
+
+  <!-- Footer section starts  -->
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Quick Links</h3>
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+
+        <div class="box">
+            <h3>Extra Links</h3>
+            <a href="https://www.carousell.sg/u/Lawlster123/">Carousel Page</a>
+            <a href="https://www.tiktok.com/@el_lawlster">TikTok Page</a>
+        </div>
+
+        <div class="box">
+            <h3>Locations</h3>
+            <a href="#">Singapore</a>
+        </div>
+
+        <div class="box">
+            <h3>Contact Info</h3>
+            <a href="#">+65 91234567</a>
+            <a href="#">upcycle@gmail.com</a>
+            <a href="#">Singapore</a>
+            <img src="images/payment.png" alt="">
+        </div>
+    </div>
+</section>
+
+<footer class = "footer">
+    <div class = "inner-footer">
+        <div class = "social-links">
+            <ul>
+                <li class = "social-items"><a href="https://www.facebook.com/groups/playvalorant"><i class = "fab fa-facebook"></i></a></li>
+                <li class = "social-items"><a href="https://www.instagram.com/angstychinatea/"><i class = "fab fa-instagram"></i></a></li>
+                <li class = "social-items"><a href="https://twitter.com/PlayVALORANT"><i class = "fab fa-twitter"></i></a></li>
+                <li class = "social-items"><a href="https://www.youtube.com/watch?v=ADSBMb1CdzQ&ab_channel=Woohoojin%7CValorantCoaching"><i class = "fab fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class = "outer-footer">
+        Copyright &copy; Upcycle PTE LTD
+    </div>
+</footer>
+<!-- Footer section ends -->
+
+<!-- Loading screen -->
+<div class="loader-container">
+    <img src = "images/loader-img.gif" alt="">
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src ="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>  
