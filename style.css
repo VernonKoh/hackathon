@@ -145,7 +145,7 @@ header.shadow{
     min-height: 640px;
     display: flex;
     align-items: center;
-    background: url('./images//pexels-alex-fu-2967770.jpg');
+    background: url('./images//trash.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center left;
@@ -189,7 +189,20 @@ header.shadow{
     background:yellow;
 }
 /* -------------------- END -------------------- */
+.btns{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background:#333;
+    color:#fff;
+    padding:.6rem 2.5rem;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
 
+.btns:hover{
+    background:var(--pink);
+}
 
 /* -------------------- About Us -------------------- */
 .about .row{
@@ -247,7 +260,7 @@ header.shadow{
 
 /* -------------------- Subscribe page -------------------- */
 .newsletter{
-    background:url(https://cdn1.epicgames.com/offer/cbd5b3d310a54b12bf3fe8c41994174f/VAL_2560x1440-a875b64f871200771ee9397df1d7050b) no-repeat;
+    background:url('./images//reduce.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
